@@ -1,0 +1,130 @@
+
+body{
+    background-color: #003865;
+    margin: 0;
+}
+
+/*Namecard*/
+.container{
+    border-style: none;
+    width: 750px;
+    height: 210px;
+
+    position: relative;
+    bottom : -700px;
+}
+.hello{
+    color: #D4F6CC;
+    font-family: space grotesk, serif;
+    font-size: 25px;
+
+    position: absolute;
+    top: -10px;
+    left: 86px;
+}
+.name{
+    color: bisque;
+    font-family: Space Grotesk , serif;
+    font-size: 100px;
+    font-kerning: normal;
+   letter-spacing: -7.5px;
+    position: absolute;
+    top:10px;
+    left: 80px;
+}
+
+.caption{
+    font-size: 22px;
+    font-family: Space Grotesk , serif;
+    color: #D4F6CC;
+    position: absolute;
+    top: 130px;
+    right: 80px;
+
+    text-align: right;
+}
+
+/*SVG - Namecard*/
+#namecard{
+    position: absolute;
+    z-index: 0;
+    bottom: 100px;
+    left: 100px;
+    width: 854px;
+    height: 243px;
+}
+
+#photu{
+
+box-sizing: border-box;
+
+position: absolute;
+z-index: 0;
+width: 665px;
+height: 960px;
+left: 1147px;
+top: 178px;
+
+background: url(IMG_20230520_203321618.jpg);
+border: 2px solid #D4F6CC;
+border-radius: 332.5px;
+
+}
+
+/*Top bar*/
+
+
+#Topbar{
+    border-style: none;
+    position: absolute;
+    width: 1920px;
+    height: 110px;
+
+}
+.button{
+    padding-top: 20px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 10px ;
+    
+
+    font-family: space grotesk;
+    font-size: 23px;
+    color: #FFE5C4;
+}
+.about{
+    position: absolute;
+    top: 10px;
+    left: 1017px;
+}
+.skills{
+    position: absolute;
+    top: 10px;
+    left: 1146px;
+}
+.experience{
+    position: absolute;
+    top: 10px;
+    left: 1255px;
+}
+.projects{
+    position: absolute;
+    top: 10px;
+    left: 1425px;
+}
+.contact{
+    position: absolute;
+    top: 10px;
+    left: 1568px;
+}
+
+.button:hover
+{
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #FF6B00;
+
+    background-color: #004A85;
+}
