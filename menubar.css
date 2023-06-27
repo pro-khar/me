@@ -1,0 +1,55 @@
+
+  #mb{
+    min-width: 702.45px;
+    margin: 10px;
+    background-color: yellow;
+    border-style: 10px;
+    border-style: solid;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    position: fixed;
+    
+    z-index: 5;
+  }
+  .mb_aligner{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mb_btn{
+    background-color: rgb(36, 181, 207);
+   
+    font-size: 1em;
+    font-family: IBM Plex mono, monospace;
+    word-spacing: -4px;
+    letter-spacing: -0.5px;
+  
+    
+    padding: 15px;
+    transition: all 0.2s ease;
+  }
+  .resume{
+    background-color: rgb(160, 224, 41);
+    width: 4.7em;
+    text-align: center;
+
+    border-left: 3px solid;
+
+    position: relative;
+  }
+  .mb_btn span{
+    color: beige;
+  } 
+  
+  .mb_btn:hover{
+    background-color: black;
+    color: beige;
+    border-color: black;
+  }
+  .mb_btn:active{
+    background-color: red;
+  }
