@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 3vw;
 
     position: absolute;
     top: 50%;
@@ -43,7 +43,7 @@
     padding: 20px;
 
 }
-#name{
+.name{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 6.5em;
     line-height: 0.59;
@@ -51,9 +51,12 @@
 
     text-align: center;
     color: beige;
+
+    transition: all 0.2s ease;
 }
-
-
+.name:hover{
+    text-shadow: 15px 15px 0px black;
+}
 #github_name{
 
     display: flex;
@@ -63,14 +66,14 @@
 }
 
 #github_name img{
-    width: 4em;
+    width: 2.5em;
 }
 #github_name span{
-    font-size: 4em;
+    font-size: 2.5em;
     font-family: 'IBM Plex sans', monospace;
     letter-spacing: -0.1em;
 
-    padding-bottom: 14.5px;
+    padding-bottom: 5%;
 }
 
 
