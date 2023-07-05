@@ -10,7 +10,6 @@
     display: flex;
     
     position: fixed;
-    
     z-index: 5;
   }
   .mb_aligner{

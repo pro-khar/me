@@ -1,0 +1,67 @@
+#page1{
+    background-color: rgb(231, 0, 0);
+}
+
+#front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+#greet{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3em;
+    line-height: 0.59;
+    letter-spacing: -4px;
+    word-spacing: -15px;
+
+    padding: 20px;
+
+}
+.name{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 6.5em;
+    line-height: 0.59;
+    letter-spacing: -5px;
+
+    text-align: center;
+    color: beige;
+
+    transition: all 0.2s ease;
+}
+.name:hover{
+    text-shadow: 15px 15px 0px black;
+}
+#github_name{
+
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap ;
+    flex-direction: row;
+}
+
+#github_name img{
+    width: 2.5em;
+}
+#github_name span{
+    font-size: 2.5em;
+    font-family: 'IBM Plex sans', monospace;
+    letter-spacing: -0.1em;
+
+    padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
