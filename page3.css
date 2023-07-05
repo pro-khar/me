@@ -61,10 +61,10 @@
 }
 #card_container:hover{
     box-shadow: 15px 24px 0 black;
-
     #header{
         top: 15px;
         left: -15px;
     }
+    
 }
 

@@ -15,7 +15,7 @@
     height: 100vh;
     max-width: 900px;
 
-    border-bottom: 5px solid;
+    border-bottom: 3px solid black;
 }
 #page1{
     background-color: rgb(231, 0, 0);
