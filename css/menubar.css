@@ -11,6 +11,7 @@
     
     position: fixed;
     z-index: 5;
+    
   }
   .mb_aligner{
     position: relative;
@@ -24,10 +25,12 @@
     font-family: IBM Plex mono, monospace;
     word-spacing: -4px;
     letter-spacing: -0.5px;
-  
-    
     padding: 15px;
     transition: all 0.2s ease;
+  }
+  .mb_btn a{
+    text-decoration: none;
+    color: black;
   }
   .resume{
     background-color: rgb(160, 224, 41);
@@ -46,6 +49,10 @@
     background-color: black;
     color: beige;
     border-color: black;
+    
+    >a{
+      color:beige;
+    }
   }
   .mb_btn:active{
     background-color: red;
