@@ -1,62 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
 #page1{
     background-color: #0086E7;
 }
+#content{
+    width: fit-content;
+    height: fit-content;
 
-#front{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3vw;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
-}
-#greet{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 3em;
-    line-height: 0.59;
-    letter-spacing: -4px;
-    word-spacing: -15px;
-
-    padding: 20px;
+    margin-left: 15%;
+    margin-top: 20em;
+    line-height: 1;
 
 }
-.name{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 6.5em;
-    line-height: 0.59;
-    letter-spacing: -5px;
-
-    text-align: center;
+#hi{
+    font-family: 'IBM Plex mono', monospace;
+    font-weight:bold;
+    font-size: 1.5rem;
+    letter-spacing: -0.1rem;
+    color: #9DCDE0;
+}
+#name{
+    font-family: 'IBM Plex sans', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+    margin-left: -3px;
     color: beige;
-
-    transition: all 0.2s ease;
 }
-.name:hover{
-    text-shadow: 15px 15px 0px black;
+#domains{
+    font-family: 'IBM Plex sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    color: #9DCDE0;
 }
-#github_name{
-
-    display: flex;
-    gap: 8px;
-    flex-wrap: nowrap ;
-    flex-direction: row;
+#para{
+    font-size: 1rem;
+    font-family: 'IBM Plex mono';
+    letter-spacing: -0.02rem;
+    font-weight: 500;
+    color:#9DCDE0;
+    line-height: 1.5;
 }
-
-#github_name img{
-    width: 2.5em;
+#shine{
+    color: beige;
 }
-#github_name span{
-    font-size: 2.5em;
-    font-family: 'IBM Plex sans', monospace;
-    letter-spacing: -0.1em;
-
-    padding-bottom: 5%;
-}
-
 
 
 
