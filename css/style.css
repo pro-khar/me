@@ -11,13 +11,9 @@ body{
     justify-content: center;
     align-items: center;
 
-    background:
-radial-gradient(black 15%, transparent 16%) 0 0,
-radial-gradient(black 15%, transparent 16%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#282828;
-background-size:16px 16px;
+    background: #333;
+  background-image: linear-gradient(rgba(75, 75, 75, 0.7) .1em, transparent .1em), linear-gradient(90deg, rgba(67, 67, 67, 0.7) .1em, transparent .1em);
+  background-size: 2.5em 2.5em;
  }
 .pages{
     width: 100vw;
