@@ -2,12 +2,22 @@
 #page1{
     background-color: #0086E7;
 }
+#content_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
 #content{
     width: fit-content;
     height: fit-content;
 
-    margin-left: 15%;
-    margin-top: 20em;
+    /*margin-left: 15%;
+    margin-top: 20em;*/
+
     line-height: 1;
 
 }
