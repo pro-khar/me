@@ -36,11 +36,9 @@
   .resume{
     background-color: rgb(160, 224, 41);
     width: 4.7em;
-    text-align: center;
+    height: 1.25em;
 
     border-left: 3px solid;
-
-    position: relative;
   }
   .mb_btn span{
     color: beige;
