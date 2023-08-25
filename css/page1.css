@@ -55,6 +55,34 @@
     color: beige;
 }
 
+/*Get in Touch*/
+.pagebutton{
+    width: fit-content;
+
+    background-color: rgb(160, 224, 41);
+    border: 3px solid;
+
+    font-family: 'IBM Plex Mono';
+    font-size: 1em;
+    font-family: IBM Plex mono, monospace;
+    font-weight: 500;
+    
+    word-spacing: -4px;
+    letter-spacing: -0.5px;
+   
+    margin-top: 30px;
+    padding: 15px;
+    transition: all 0.2s ease;
+
+}
+
+.pagebutton:hover{
+    background-color: rgb(160, 224, 41);
+    color: rgb(0, 0, 0);
+    border-color: black;
+
+    box-shadow: 10px 10px 0 black;
+  }
 
 
 
