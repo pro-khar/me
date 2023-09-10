@@ -1,0 +1,28 @@
+/*MAIN HEADING*/
+.heading{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.15rem;
+    >img{
+        padding: 10px;
+        margin-left: 1em;
+    }
+    >span{
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        font-size: 24px;
+    
+        color: #909090;
+    }
+}
+.para{
+    color: #5B5B5B;
+    text-align: justify;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
