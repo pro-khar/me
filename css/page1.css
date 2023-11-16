@@ -77,8 +77,8 @@
 }
 
 .pagebutton:hover{
-    background-color: rgb(160, 224, 41);
-    color: rgb(0, 0, 0);
+    background-color: rgb(70, 70, 70);
+    color: beige;
     border-color: black;
 
     box-shadow: 10px 10px 0 black;
