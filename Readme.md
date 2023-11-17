@@ -1,4 +1,4 @@
-# Portfolio website - Prakhar Verma (STILL IN BETA)
+# Portfolio website - Prakhar Verma (WORK IN PROGRESS)
 
 Welcome the Github repository of my personal portfolio.
 ## [Click here](https://pro-khar.github.io/me) to view the live deployed website
