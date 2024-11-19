@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Intro() {
   return (
     <div
       id="hero"
-      className="bg-background flex flex-col items-center justify-center h-full w-full"
+      className="bg-background flex flex-col items-center justify-center min-h-screen w-full"
     >
       <div className="flex flex-col items-start p-8 gap-4 text-white">
         <p className="text-4xl font-semibold tracking-tighter">
@@ -26,7 +27,7 @@ function Intro() {
           <span className=" text-white">RISC</span> based{" "}
           <span className=" text-white">ASIC</span> design of a processor.
         </p>
-        <Button>Get in Touch</Button>
+        <Button><FaPaperPlane/> Get in Touch</Button>
       </div>
     </div>
   );

@@ -4,12 +4,12 @@ import UiTest from "./ui-test";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen relative">
-      <div className="absolute top-2 right-2">
+    <div className="flex flex-col items-center justify-center">
+      <div className="fixed top-2 right-2">
         <ModeToggle />
       </div>
       <Intro />
-      {/* <UiTest /> */}
+      <UiTest />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Button } from "./components/ui/button";
 
 function UiTest() {
   return (
-    <div className="flex items-center justify-center h-screen w-full bg-background gap-2">
+    <div className="flex items-center justify-center min-h-screen w-full bg-background gap-2">
       <p className="text-primary-foreground">Ui-Test</p>
       <div className="flex flex-col items-start gap-2">
         <Button>Get in Touch</Button>
