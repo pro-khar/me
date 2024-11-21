@@ -9,25 +9,6 @@ import { MdEmail } from "react-icons/md";
 
 function GetInTouch() {
   return (
-    // <DropdownMenu>
-    //   <DropdownMenuTrigger>
-    //     <Button>
-    //       <FaPaperPlane /> Get in Touch
-    //     </Button>
-    //   </DropdownMenuTrigger>
-    //   <DropdownMenuContent>
-    //     <DropdownMenuGroup>
-    //       <DropdownMenuItem>
-    //         <Button size="icon">
-    //           <MdEmail />
-    //         </Button>
-    //       </DropdownMenuItem>
-    //       <DropdownMenuItem>
-    //         <Button size="icon"><FaLinkedin/></Button>
-    //       </DropdownMenuItem>
-    //     </DropdownMenuGroup>
-    //   </DropdownMenuContent>
-    // </DropdownMenu>
     <Popover>
       <PopoverTrigger>
         <Button>

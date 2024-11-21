@@ -1,4 +1,5 @@
 import { ModeToggle } from "./components/mode-toggle";
+import Navbar from "./components/Navbar/main";
 import About from "./pages/about/about";
 import Intro from "./pages/intro/Intro";
 import UiTest from "./ui-test";
@@ -9,6 +10,7 @@ function App() {
       <div className="fixed top-2 right-2">
         <ModeToggle />
       </div>
+      <Navbar/>
       <Intro />
       <About/>
       <UiTest />
