@@ -1,4 +1,5 @@
 import { ModeToggle } from "./components/mode-toggle";
+import About from "./pages/about/about";
 import Intro from "./pages/intro/Intro";
 import UiTest from "./ui-test";
 
@@ -9,6 +10,7 @@ function App() {
         <ModeToggle />
       </div>
       <Intro />
+      <About/>
       <UiTest />
     </div>
   );
