@@ -12,8 +12,8 @@ function App() {
       </div>
       <Navbar/>
       <Intro />
-      {/* <About/>
-      <UiTest /> */}
+      <About/>
+      {/* <UiTest /> */}
     </div>
   );
 }

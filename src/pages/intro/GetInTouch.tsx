@@ -4,7 +4,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { FaLinkedin, FaPaperPlane } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaPaperPlane, FaSquareTwitter, FaTwitch } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 function GetInTouch() {
@@ -34,6 +36,25 @@ function GetInTouch() {
             <FaLinkedin />
           </Button>
         </a>
+        <div className="border-r-2 mx-2"/>
+        <a
+          href="https://github.com/pro-khar"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button size="icon" variant="secondary">
+            <FaGithub />
+          </Button>
+        </a>
+        <a
+        href="https://x.com/yourskinnydude"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Button size="icon" variant="secondary">
+          <BsTwitterX/>
+        </Button>
+      </a>
       </PopoverContent>
     </Popover>
   );
