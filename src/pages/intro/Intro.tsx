@@ -5,7 +5,7 @@ function Intro() {
   return (
     <div
       id="hero"
-      className="flex flex-col items-center justify-center min-h-screen w-full"
+      className="flex flex-col items-center justify-center min-h-screen w-full border-b-[3px]"
     >
       <BgVid />
       <div className="flex flex-col items-start p-8 gap-4 ">

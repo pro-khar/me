@@ -2,18 +2,18 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center min-h-screen w-full"
+      className="flex flex-col items-center justify-center min-h-screen w-full bg-[beige] dark:bg-black"
     >
       <div
         id="about container"
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8 md:p-16 max-w-screen-xl"
+        className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 p-8 md:p-16 max-w-screen-xl"
       >
-        <div className="flex flex-col items-start gap-4">
-          <h1 className="text-3xl md:text-5xl font-semibold tracking-tighter text-white">
+        <div className="flex flex-col items-start gap-4 order-2 md:order-1">
+          <h1 className="text-center md:text-left text-3xl md:text-5xl font-semibold tracking-tighter w-full">
             About
           </h1>
-          <hr className="w-full border-white" />
-          <p className="text-xs md:text-sm xl:text-md text-white font-ibm-mono font-medium">
+          <hr className="w-full border-black dark:border-white" />
+          <p className="text-xs md:text-sm xl:text-md font-ibm-mono font-medium text-muted-foreground">
             I'm a recent grad with a strong passion for making things look good
             on screens, tinkering with gadgets, and designing the tiny brains
             that make devices work. I've dived into cool projects during my
@@ -38,7 +38,7 @@ function About() {
             😊
           </p>
         </div>
-        <pre className="text-[3px] md:text-[3px] xl:text-[4px] text-white -tracking-[-0.1em] font-bold text-center my-auto">{`MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        <pre className="bg-black/75 text-white order-1 border-[3px] border-black/55 w-[fit-content] text-[0.18rem] md:text-[3px] xl:text-[4px] tracking-[0.15em] font-bold my-auto hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] dark:hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)] transition-all duration-300">{`MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
