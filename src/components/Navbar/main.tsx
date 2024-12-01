@@ -22,7 +22,7 @@ function Navbar() {
           {navElement.map((nav, i) => (
             <a
               href={nav.href}
-              className="bg-[#24b5cf] px-4 py-3 hover:text-white hover:bg-zinc-700 transition-all duration-300"
+              className="bg-[#24b5cf] dark:bg-zinc-700/55 backdrop-blur-md px-4 py-3 hover:text-white hover:bg-zinc-700 dark:hover:bg-zinc-500 transition-all duration-300"
             >
               <span className="text-white mr-1">0{i + 1}</span>
               {nav.name}
@@ -31,7 +31,7 @@ function Navbar() {
         </div>
         <a
           href=""
-          className="bg-primary border-black border-[3px] px-4 py-3 hover:text-white hover:bg-zinc-700 transition-all duration-300 flex gap-2"
+          className="bg-primary dark:bg-zinc-500 border-black border-[3px] px-4 py-3 hover:text-white hover:bg-zinc-700 dark:hover:bg-zinc-800 transition-all duration-300 flex gap-2"
         >
           <Download /> Resume
         </a>
@@ -43,7 +43,7 @@ function Navbar() {
             <ChevronDown />
           </Button>
         </DrawerTrigger>
-        <DrawerContent className="border-black dark:border-white bg-primary-foreground border-[3px] rounded-none">
+        <DrawerContent className="border-black dark:border-white/55 bg-primary-foreground border-[3px] rounded-none">
           <DrawerClose>
             <div className="grid grid-cols-2 gap-2 p-4">
               {navElement.map((nav, i) => (
@@ -51,7 +51,7 @@ function Navbar() {
                   href={nav.href}
                   className=" hover:text-white hover:bg-black transition-all duration-300 w-full"
                 >
-                  <Button className="py-6 w-full bg-[#24b5cf] hover:bg-zinc-700 hover:text-white">
+                  <Button className="dark:border-white/55 dark:text-white py-6 w-full bg-[#24b5cf] dark:bg-zinc-700 hover:bg-zinc-700 dark:hover:bg-zinc-500 hover:text-white">
                     <span className="text-white mr-1">0{i + 1}</span>
                     {nav.name}
                   </Button>
@@ -61,7 +61,7 @@ function Navbar() {
                 href=""
                 className="hover:text-white hover:bg-black transition-all duration-300 w-full"
               >
-                <Button className="py-6 w-full bg-primary hover:bg-zinc-700 hover:text-white">
+                <Button className="py-6 w-full bg-primary hover:bg-zinc-700 dark:hover:bg-zinc-500 hover:text-white">
                   <Download /> Resume
                 </Button>
               </a>
