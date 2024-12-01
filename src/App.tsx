@@ -11,7 +11,7 @@ function App() {
       <div className="fixed top-2 right-2">
         <ModeToggle />
       </div>
-      <UnderCon/>
+      {/* <UnderCon/> */}
       <Navbar/>
       <Intro />
       <About/>
