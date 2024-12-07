@@ -17,18 +17,19 @@ function Intro() {
             Prakhar Verma.
           </p>
           <p className="text-sm font-semibold leading-5 text-white/75">
-            Full Stack Web Developer | Budding gopher | Chip-Design Geek
+            Full Stack Software Developer | React | React-Native | Chip-Design
+            Geek
           </p>
         </div>
 
         <p className="font-medium tracking-tight text-sm md:text-base max-w-xl mt-4 font-ibm-mono text-white/75">
           I love to build solutions with a keen eye for details and design.
-          Experienced in developing Utility-oriented web apps and Internal tools
+          Experienced in developing Utility-oriented Mobile and Web apps,
+          Internal tools and Solutions
           <br />
           <br />
           I’m also an Electronics and{" "}
-          <span className=" text-white">Chip Design</span> hobbiyist
-          exploring{" "}
+          <span className=" text-white">Chip Design</span> hobbiyist exploring{" "}
           <span className=" text-white">RISC</span> and{" "}
           <span className=" text-white">ASIC</span> design principles.
         </p>
