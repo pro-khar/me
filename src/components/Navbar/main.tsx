@@ -17,7 +17,7 @@ function Navbar() {
   ];
   return (
     <>
-      <div className="md:flex hidden items-center font-ibm-mono font-medium fixed top-2">
+      <div className="md:flex hidden items-center font-ibm-mono font-medium fixed top-2 z-50">
         <div className="flex border-black border-[3px] border-r-0">
           {navElement.map((nav, i) => (
             <a

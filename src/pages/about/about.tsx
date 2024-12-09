@@ -2,7 +2,7 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center min-h-screen w-full bg-[beige] dark:bg-black"
+      className="flex flex-col items-center justify-center min-h-screen w-full bg-[beige] dark:bg-black border-b-[3px]"
     >
       <div
         id="about container"

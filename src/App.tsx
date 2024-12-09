@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/main";
 import UnderCon from "./components/UnderConstruction/UnderCon";
 import About from "./pages/about/about";
 import Intro from "./pages/intro/Intro";
+import Skills from "./pages/Skills/Skills";
 import UiTest from "./ui-test";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       <Intro />
       <About/>
+      <Skills/>
       {/* <UiTest /> */}
     </div>
   );
