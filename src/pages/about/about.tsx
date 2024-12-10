@@ -10,7 +10,7 @@ function About() {
       >
         <div className="flex flex-col items-start gap-4 order-2 md:order-1">
           <h1 className="text-center md:text-left text-3xl md:text-5xl font-semibold tracking-tighter w-full">
-            About
+            About Me
           </h1>
           <hr className="w-full border-black dark:border-white" />
           <p className="text-xs md:text-sm xl:text-md font-ibm-mono font-medium text-muted-foreground">

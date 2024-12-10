@@ -21,6 +21,12 @@ import {
 import { TbBrandCpp, TbSql } from "react-icons/tb";
 
 import { useTheme } from "@/components/theme-provider";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 function Skills() {
   const { theme } = useTheme();
@@ -28,7 +34,7 @@ function Skills() {
 
   function TextIcon(props: { name: string }) {
     return (
-      <p className="text-base bg-black text-white dark:bg-white dark:text-black py-2 px-3 rounded-xl tracking-tighter font-semibold">
+      <p className="text-base bg-black text-white dark:bg-white dark:text-black py-3 px-4 rounded-xl tracking-tighter font-semibold">
         {props.name}
       </p>
     );
@@ -158,8 +164,14 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="flex flex-col items-center justify-center w-full bg-background dark:bg-black md:py-32 py-16"
+      className="flex flex-col gap-8 md:gap-16 items-center justify-center w-full bg-background dark:bg-black md:py-32 py-16"
     >
+      <div>
+        <h1 className="text-center md:text-left text-3xl md:text-5xl font-semibold tracking-tighter w-full">
+          My Skillset
+        </h1>
+        {/* <hr className="w-full border-black dark:border-white" /> */}
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-7 gap-4">
         {skData.map((item, i) => (
           <div id="one-container" className="relative group" key={i}>
@@ -172,9 +184,18 @@ function Skills() {
                 className="grid grid-cols-3 w-full gap-x-2 gap-y-4 place-items-center p-4 mt-16"
               >
                 {item.skills.map((skill, i) => (
-                  <div className="text-5xl" key={i}>
-                    {skill.icon}
-                  </div>
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <div className="text-5xl" key={i}>
+                          {skill.icon}
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{skill.name}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 ))}
               </div>
             </div>
