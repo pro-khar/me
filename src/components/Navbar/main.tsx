@@ -11,8 +11,9 @@ function Navbar() {
   const navElement = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
+
     { name: "Contact", href: "#contact" },
   ];
   return (
@@ -61,7 +62,10 @@ function Navbar() {
                 href=""
                 className="hover:text-white hover:bg-black transition-all duration-300 w-full"
               >
-                <a href="https://drive.google.com/file/d/1uIgEqPy2ec420DMDsFBw993fy2JkVUPN/view?usp=sharing" className="hover:text-white hover:bg-black transition-all duration-300 w-full">
+                <a
+                  href="https://drive.google.com/file/d/1uIgEqPy2ec420DMDsFBw993fy2JkVUPN/view?usp=sharing"
+                  className="hover:text-white hover:bg-black transition-all duration-300 w-full"
+                >
                   <Button className="dark:border-white/55 dark:text-white py-6 w-full bg-primary hover:bg-zinc-700 dark:hover:bg-zinc-500 hover:text-white">
                     <Download /> Resume
                   </Button>
