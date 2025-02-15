@@ -164,7 +164,7 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="flex flex-col gap-8 md:gap-16 items-center justify-center w-full bg-background dark:bg-black md:py-32 py-16"
+      className="flex flex-col gap-8 md:gap-16 items-center justify-center w-full bg-background dark:bg-black md:py-32 py-16 border-b-[3px]"
     >
       <div>
         <h1 className="text-center md:text-left text-3xl md:text-5xl font-semibold tracking-tighter w-full">

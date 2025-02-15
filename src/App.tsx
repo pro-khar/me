@@ -1,10 +1,9 @@
 import { ModeToggle } from "./components/mode-toggle";
 import Navbar from "./components/Navbar/main";
-import UnderCon from "./components/UnderConstruction/UnderCon";
 import About from "./pages/about/about";
+import Experience from "./pages/Experience";
 import Intro from "./pages/intro/Intro";
 import Skills from "./pages/Skills/Skills";
-import UiTest from "./ui-test";
 
 function App() {
   return (
@@ -13,10 +12,11 @@ function App() {
         <ModeToggle />
       </div>
       {/* <UnderCon/> */}
-      <Navbar/>
+      <Navbar />
       <Intro />
-      <About/>
-      <Skills/>
+      <About />
+      <Skills />
+      <Experience />
       {/* <UiTest /> */}
     </div>
   );
