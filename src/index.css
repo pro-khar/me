@@ -87,6 +87,15 @@ layer(base);
     scroll-behavior: smooth;
   }
 
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   .font-ibm-mono {
     font-family: 'IBM Plex Mono', monospace;
   }
