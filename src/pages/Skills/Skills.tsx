@@ -27,17 +27,17 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+function TextIcon(props: { name: string }) {
+  return (
+    <p className="text-base bg-black text-white dark:bg-white dark:text-black py-3 px-4 rounded-xl tracking-tighter font-semibold">
+      {props.name}
+    </p>
+  );
+}
+
 function Skills() {
   const { theme } = useTheme();
   console.log(theme);
-
-  function TextIcon(props: { name: string }) {
-    return (
-      <p className="text-base bg-black text-white dark:bg-white dark:text-black py-3 px-4 rounded-xl tracking-tighter font-semibold">
-        {props.name}
-      </p>
-    );
-  }
 
   const skData = [
     {
