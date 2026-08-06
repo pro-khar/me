@@ -38,7 +38,7 @@ function Experience() {
       id="experience"
       className="flex flex-col items-center justify-center min-h-screen w-full bg-[beige] dark:bg-black border-b-[3px]"
     >
-      <div id="Exp container" className="max-w-screen-2xl flex flex-col gap-8">
+      <div id="Exp container" className="max-w-(--breakpoint-2xl) flex flex-col gap-8">
         <h1 className="text-center text-3xl md:text-5xl font-semibold tracking-tighter w-full">
           Experience
         </h1>

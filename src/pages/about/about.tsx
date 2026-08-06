@@ -6,7 +6,7 @@ function About() {
     >
       <div
         id="about container"
-        className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 2xl:gap-32 p-8 md:p-16 max-w-screen-2xl"
+        className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 2xl:gap-32 p-8 md:p-16 max-w-(--breakpoint-2xl)"
       >
         <div className="flex flex-col items-start gap-4 order-2 md:order-1">
           <h1 className="text-center md:text-left text-3xl md:text-5xl font-semibold tracking-tighter w-full">
@@ -38,7 +38,7 @@ function About() {
             😊
           </p>
         </div>
-        <pre className="bg-black/75 text-white order-1 border-[3px] border-black/55 w-[fit-content] text-[0.1rem] md:text-[2px] xl:text-[3px] tracking-[0.15em] font-bold my-auto md:hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] md:dark:hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)]  transition-all duration-300">{`.................... ....,''..............''',:::............'''......................;:::;,..'','......................................'''.....'...,'.'.....'..................'''''.'''.''',,;,'';:;,,,,,:::;,,,,;;:;:;:c:;;::::::cc::c:ccccccllllccllll
+        <pre className="bg-black/75 text-white order-1 border-[3px] border-black/55 w-fit text-[0.1rem] md:text-[2px] xl:text-[3px] tracking-[0.15em] font-bold my-auto md:hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] md:dark:hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)]  transition-all duration-300">{`.................... ....,''..............''',:::............'''......................;:::;,..'','......................................'''.....'...,'.'.....'..................'''''.'''.''',,;,'';:;,,,,,:::;,,,,;;:;:;:c:;;::::::cc::c:ccccccllllccllll
 .............''...;...,;:;;;'.................,;;..''.........','.....................;,,,'''.'',;,'''................................'.......................'..................''...'''.'''',,''',,''',,,;:c:,,;::;;;;;:;;;;:;:::::cccccc::cccccccccclol
 ......''........'''...,;;;:;,'..',,;'',,,''''.';,..,'......'...,,.. ................';::;''.''..',;;;cl,...............................''........................................'.........'''',',''',,,''';:;;,,,;;;;;;;;;;;;;;;;:::ccclccccccccocccccllc
 .................''...;,';c:'..,;;:cc',,..',;,.,..,;,......'.........  ............,:cc:;,'.,'..''';:co:...............................'..;................................'..........'.....''..'''',,,''''',,;;,,,,,;;;;;;,;;;;;;;:c::cc::cccccccccccclll
