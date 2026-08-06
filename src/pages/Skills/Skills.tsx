@@ -10,15 +10,14 @@ import {
 } from "react-icons/fa";
 import { FaGolang, FaLinux, FaReact } from "react-icons/fa6";
 import { RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiGnubash, SiRedux, SiTypescript } from "react-icons/si";
 import {
-  SiAdobeillustrator,
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiGnubash,
-  SiRedux,
-  SiTypescript,
-} from "react-icons/si";
-import { TbBrandCpp, TbSql } from "react-icons/tb";
+  TbBrandAdobeIllustrator,
+  TbBrandAdobePhotoshop,
+  TbBrandAdobeXd,
+  TbBrandCpp,
+  TbSql,
+} from "react-icons/tb";
 
 import { useTheme } from "@/components/theme-provider";
 import {
@@ -68,9 +67,9 @@ function Skills() {
       category: "Design/UI/UX",
       skills: [
         { name: "Figma", icon: <FaFigma /> },
-        { name: "Adobe XD", icon: <SiAdobexd /> },
-        { name: "Adobe Illustrator", icon: <SiAdobeillustrator /> },
-        { name: "Photoshop", icon: <SiAdobephotoshop /> },
+        { name: "Adobe XD", icon: <TbBrandAdobeXd /> },
+        { name: "Adobe Illustrator", icon: <TbBrandAdobeIllustrator /> },
+        { name: "Photoshop", icon: <TbBrandAdobePhotoshop /> },
       ],
     },
 
