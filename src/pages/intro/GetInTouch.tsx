@@ -12,7 +12,7 @@ import { MdEmail } from "react-icons/md";
 function GetInTouch() {
   return (
     <Popover>
-      <PopoverTrigger>
+      <PopoverTrigger asChild>
         <Button>
           <FaPaperPlane /> Get in Touch
         </Button>

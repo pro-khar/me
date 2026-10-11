@@ -183,10 +183,10 @@ function Skills() {
                 className="grid grid-cols-3 w-full gap-x-2 gap-y-4 place-items-center p-4 mt-16"
               >
                 {item.skills.map((skill, i) => (
-                  <TooltipProvider>
+                  <TooltipProvider key={i}>
                     <Tooltip>
                       <TooltipTrigger>
-                        <div className="text-5xl" key={i}>
+                        <div className="text-5xl">
                           {skill.icon}
                         </div>
                       </TooltipTrigger>
