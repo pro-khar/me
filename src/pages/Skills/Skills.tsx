@@ -12,11 +12,13 @@ import {
 import { FaGolang, FaLinux, FaReact } from "react-icons/fa6";
 import {
   RiNextjsFill,
+  RiOpenaiFill,
   RiSupabaseFill,
   RiTailwindCssFill,
 } from "react-icons/ri";
 import {
   SiApacheecharts,
+  SiClaudecode,
   SiDify,
   SiExpo,
   SiFastapi,
@@ -78,7 +80,11 @@ function Skills() {
     },
     {
       category: "AI/Tools",
-      skills: [{ name: "Dify", subtitle: "LLM workflows", icon: <SiDify /> }],
+      skills: [
+        { name: "Dify", subtitle: "LLM workflows", icon: <SiDify /> },
+        { name: "Claude Code", icon: <SiClaudecode /> },
+        { name: "Codex", icon: <RiOpenaiFill /> },
+      ],
       more: ["Prompt design", "Streaming chat (SSE)", "Speech-to-text"],
     },
     {
@@ -176,11 +182,12 @@ function Skills() {
       category: "Backend & Databases",
       skills: [
         { name: "FastAPI", icon: <SiFastapi /> },
+        { name: "go-chi", icon: <FaGolang /> },
+        { name: "Gorilla Mux", icon: <FaGolang /> },
         { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
         { name: "SQL", icon: <TbSql /> },
         { name: "Supabase", icon: <RiSupabaseFill /> },
       ],
-      more: ["go-chi"],
     },
     {
       category: "Tools",
@@ -207,13 +214,13 @@ function Skills() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
         {skData.map((item, i) => (
           <div id="one-container" className="relative group" key={i}>
-            <div className="bg-[beige] dark:bg-zinc-500 w-[250px] h-[250px border-[3px] dark:border-white/55 relative font-ibm-mono group-hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] dark:group-hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)]  transition-all delay-100 flex flex-col items-center justify-end">
-              <div className="absolute top-[-3px] left-[-3px] bg-[#24b5cf] border-[3px] w-[250px] p-4 text-lg font-semibold group-hover:top-2 group-hover:-left-4 transition-all duration-100 text-center md:text-left">
+            <div className="bg-[beige] dark:bg-zinc-500 w-62.5 h-[250px border-[3px] dark:border-white/55 relative font-ibm-mono group-hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] dark:group-hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)]  transition-all delay-100 flex flex-col items-center justify-end">
+              <div className="absolute -top-0.75 -left-0.75 bg-[#24b5cf] border-[3px] w-62.5 p-3 text-lg font-semibold group-hover:top-2 group-hover:-left-4 transition-all duration-100 text-center md:text-left">
                 {item.category}
               </div>
               <div
                 id="skill-group"
-                className="p-4 mt-16 flex flex-wrap gap-1 w-full"
+                className="p-4 mt-14 flex flex-wrap gap-1 w-full"
               >
                 {item.skills.map((skill, i) => (
                   <div className="flex-col items-start" key={i}>
