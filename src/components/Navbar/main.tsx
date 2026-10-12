@@ -32,7 +32,7 @@ function Navbar() {
           ))}
         </div>
         <a
-          href="https://drive.google.com/file/d/1uIgEqPy2ec420DMDsFBw993fy2JkVUPN/view?usp=sharing"
+          href="https://drive.google.com/file/d/1R_Bv-jHbsIWwBD3YkWBCisLTFOJJoh6P/view?usp=sharing"
           className="bg-primary dark:bg-zinc-500 border-black border-[3px] px-4 py-3 hover:text-white hover:bg-zinc-700 dark:hover:bg-zinc-800 transition-all duration-300 flex gap-2"
         >
           <Download /> Resume
@@ -65,7 +65,7 @@ function Navbar() {
                 asChild
                 className="dark:border-white/55 dark:text-white py-6 w-full bg-primary hover:bg-zinc-700 dark:hover:bg-zinc-500 hover:text-white"
               >
-                <a href="https://drive.google.com/file/d/1uIgEqPy2ec420DMDsFBw993fy2JkVUPN/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1R_Bv-jHbsIWwBD3YkWBCisLTFOJJoh6P/view?usp=sharing">
                   <Download /> Resume
                 </a>
               </Button>
