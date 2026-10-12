@@ -8,7 +8,7 @@ import Skills from "./pages/Skills/Skills";
 function App() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="fixed top-2 right-2">
+      <div className="fixed top-2 right-2 z-50">
         <ModeToggle />
       </div>
       {/* <UnderCon/> */}

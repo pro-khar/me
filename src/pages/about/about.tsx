@@ -14,28 +14,21 @@ function About() {
           </h1>
           <hr className="w-full border-black dark:border-white" />
           <p className="text-xs md:text-sm xl:text-md font-ibm-mono font-medium text-muted-foreground">
-            I'm a recent grad with a strong passion for making things look good
-            on screens, tinkering with gadgets, and designing the tiny brains
-            that make devices work. I've dived into cool projects during my
-            experience, mixing computer software with real-world stuff.
+            I studied Electronics and Communication Engineering at JIIT, and
+            somewhere between wiring up sensors and building smart-home gadgets
+            I realised I cared most about the part people actually touch: the
+            interface.
             <br />
             <br />
-            I love creating user-friendly interfaces that are easy to use and
-            look awesome. Think of it as making digital things user-friendly and
-            friendly-looking. I've also had fun playing with gadgets, making
-            them do cool things like monitoring stuff in real-time and building
-            smart devices like the ones you see in smart homes.
+            These days I lead frontend at Tradyon, building across web and
+            mobile, shaping the design system and working on AI features like
+            TradeGenie. I like interfaces that are fast, clear and consistent,
+            and I sweat the small details that get them there.
             <br />
             <br />
-            And then there's chip design. It's like creating the brains for all
-            our cool gadgets. I've learned how to make them tick, from the basic
-            building blocks to the stuff that makes them super smart.
-            <br />
-            <br />
-            Now, I'm eager to start my journey in a beginner-friendly role where
-            I can put my tech skills to work, make things even cooler, and learn
-            from awesome people like you! Let's create some tech magic together.
-            😊
+            The hardware side never left. I still tinker with electronics and
+            explore chip design, from basic logic blocks up to RISC and ASIC
+            principles.
           </p>
         </div>
         <pre className="bg-black/75 text-white order-1 border-[3px] border-black/55 w-fit text-[0.1rem] md:text-[2px] xl:text-[3px] tracking-[0.15em] font-bold my-auto md:hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] md:dark:hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)]  transition-all duration-300">{`.................... ....,''..............''',:::............'''......................;:::;,..'','......................................'''.....'...,'.'.....'..................'''''.'''.''',,;,'';:;,,,,,:::;,,,,;;:;:;:c:;;::::::cc::c:ccccccllllccllll

@@ -3,9 +3,10 @@
   "configurations": [
     {
       "name": "portfolio-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 5173
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "npm run dev -- --port ${PORT:-5173}"],
+      "port": 5173,
+      "autoPort": true
     }
   ]
 }

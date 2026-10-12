@@ -2,30 +2,35 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import {
   FaAws,
   FaCloudflare,
+  FaDocker,
   FaFigma,
   FaGit,
   FaGithub,
   FaJs,
-  FaNodeJs,
+  FaPython,
 } from "react-icons/fa";
 import { FaGolang, FaLinux, FaReact } from "react-icons/fa6";
-import { RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiGnubash, SiRedux, SiTypescript } from "react-icons/si";
 import {
-  TbBrandAdobeIllustrator,
-  TbBrandAdobePhotoshop,
-  TbBrandAdobeXd,
-  TbBrandCpp,
-  TbSql,
-} from "react-icons/tb";
+  RiNextjsFill,
+  RiSupabaseFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import {
+  SiApacheecharts,
+  SiDify,
+  SiExpo,
+  SiFastapi,
+  SiGithubactions,
+  SiGnubash,
+  SiReactquery,
+  SiRedux,
+  SiShadcnui,
+  SiTerraform,
+  SiTypescript,
+} from "react-icons/si";
+import { TbBrandCpp, TbSql } from "react-icons/tb";
 
 import { useTheme } from "@/components/theme-provider";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 function TextIcon(props: { name: string }) {
   return (
@@ -41,40 +46,43 @@ function Skills() {
 
   const skData = [
     {
-      category: "Programming",
+      category: "Frontend & Mobile",
       skills: [
-        { name: "Javascript", icon: <FaJs /> },
+        { name: "React", icon: <FaReact /> },
+        { name: "Next.js", icon: <RiNextjsFill /> },
+        { name: "Expo", icon: <SiExpo /> },
+        { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+        { name: "Redux Toolkit", icon: <SiRedux /> },
+        { name: "TanStack Query", icon: <SiReactquery /> },
+      ],
+      more: ["React Native", "Zustand", "Server-Driven UI"],
+    },
+    {
+      category: "Languages",
+      skills: [
         { name: "TypeScript", icon: <SiTypescript /> },
-
-        { name: "C/C++", icon: <TbBrandCpp /> },
-        { name: "Go", icon: <FaGolang /> },
+        { name: "Javascript", icon: <FaJs /> },
+        { name: "Python", icon: <FaPython /> },
+        { name: "Golang", icon: <FaGolang /> },
+        { name: "C++", icon: <TbBrandCpp /> },
       ],
     },
     {
-      category: "Development",
-      skills: [
-        { name: "React.js", icon: <FaReact /> },
-        { name: "Redux", icon: <SiRedux /> },
-
-        { name: "Node.js", icon: <FaNodeJs /> },
-        { name: "TailwindCSS", icon: <RiTailwindCssFill /> },
-        { name: "Supabase", icon: <RiSupabaseFill /> },
-
-        { name: "RESTful APIs", icon: <TextIcon name="APIs" /> },
-      ],
-    },
-    {
-      category: "Design/UI/UX",
+      category: "UI & Data",
       skills: [
         { name: "Figma", icon: <FaFigma /> },
-        { name: "Adobe XD", icon: <TbBrandAdobeXd /> },
-        { name: "Adobe Illustrator", icon: <TbBrandAdobeIllustrator /> },
-        { name: "Photoshop", icon: <TbBrandAdobePhotoshop /> },
+        { name: "shadcn/ui", icon: <SiShadcnui /> },
+        { name: "ECharts", icon: <SiApacheecharts /> },
       ],
+      more: ["Gluestack UI", "AG Grid", "TipTap", "i18n + RTL", "Highcharts"],
     },
-
     {
-      category: "Cloud",
+      category: "AI/Tools",
+      skills: [{ name: "Dify", subtitle: "LLM workflows", icon: <SiDify /> }],
+      more: ["Prompt design", "Streaming chat (SSE)", "Speech-to-text"],
+    },
+    {
+      category: "Cloud & DevOps",
       skills: [
         { name: "AWS", icon: <FaAws /> },
         {
@@ -86,7 +94,7 @@ function Skills() {
                   ? "/Skills/Simple Storage Service_dark.svg"
                   : "/Skills/Simple Storage Service.svg"
               }
-              className="w-12 rounded"
+              className="w-8"
               alt={`EC2 ${theme === "dark" ? "Dark" : "Light"}`}
             />
           ),
@@ -98,7 +106,7 @@ function Skills() {
               src={
                 theme === "dark" ? "/Skills/EC2_dark.svg" : "/Skills/EC2.svg"
               }
-              className="w-12 rounded"
+              className="w-8"
               alt={`EC2 ${theme === "dark" ? "Dark" : "Light"}`}
             />
           ),
@@ -112,8 +120,34 @@ function Skills() {
                   ? "/Skills/CloudFront_dark.svg"
                   : "/Skills/CloudFront.svg"
               }
-              className="w-12 rounded"
+              className="w-8"
               alt={`EC2 ${theme === "dark" ? "Dark" : "Light"}`}
+            />
+          ),
+        },
+        {
+          name: "Cognito",
+          icon: (
+            <img
+              src={
+                theme === "dark"
+                  ? "/Skills/Cognito_dark.svg"
+                  : "/Skills/Cognito.svg"
+              }
+              className="w-8"
+              alt={`Cognito ${theme === "dark" ? "Dark" : "Light"}`}
+            />
+          ),
+        },
+        {
+          name: "ECS",
+          icon: (
+            <img
+              src={
+                theme === "dark" ? "/Skills/ECS_dark.svg" : "/Skills/ECS.svg"
+              }
+              className="w-8"
+              alt={`ECS ${theme === "dark" ? "Dark" : "Light"}`}
             />
           ),
         },
@@ -126,13 +160,27 @@ function Skills() {
                   ? "/Skills/Route 53_dark.svg"
                   : "/Skills/Route 53.svg"
               }
-              className="w-12 rounded"
+              className="w-8"
               alt={`EC2 ${theme === "dark" ? "Dark" : "Light"}`}
             />
           ),
         },
         { name: "Cloudflare", icon: <FaCloudflare /> },
+        { name: "Docker", icon: <FaDocker /> },
+        { name: "GitHub Actions", icon: <SiGithubactions /> },
+        { name: "Terraform", icon: <SiTerraform /> },
       ],
+      more: ["Expo EAS"],
+    },
+    {
+      category: "Backend & Databases",
+      skills: [
+        { name: "FastAPI", icon: <SiFastapi /> },
+        { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
+        { name: "SQL", icon: <TbSql /> },
+        { name: "Supabase", icon: <RiSupabaseFill /> },
+      ],
+      more: ["go-chi"],
     },
     {
       category: "Tools",
@@ -141,21 +189,6 @@ function Skills() {
         { name: "Bash", icon: <SiGnubash /> },
         { name: "Git", icon: <FaGit /> },
         { name: "Github", icon: <FaGithub /> },
-      ],
-    },
-    {
-      category: "Databases",
-      skills: [
-        { name: "SQL", icon: <TbSql /> },
-        { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
-        { name: "Supabase", icon: <RiSupabaseFill /> },
-      ],
-    },
-    {
-      category: "Languages",
-      skills: [
-        { name: "English", icon: <TextIcon name="En" /> },
-        { name: "Hindi", icon: <TextIcon name="Hi" /> },
       ],
     },
   ];
@@ -171,7 +204,7 @@ function Skills() {
         </h1>
         {/* <hr className="w-full border-black dark:border-white" /> */}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-7 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
         {skData.map((item, i) => (
           <div id="one-container" className="relative group" key={i}>
             <div className="bg-[beige] dark:bg-zinc-500 w-[250px] h-[250px border-[3px] dark:border-white/55 relative font-ibm-mono group-hover:shadow-[10px_10px_0px_0px_rgba(0,0,0)] dark:group-hover:shadow-[10px_10px_0px_0px_rgba(255,255,255)]  transition-all delay-100 flex flex-col items-center justify-end">
@@ -180,23 +213,38 @@ function Skills() {
               </div>
               <div
                 id="skill-group"
-                className="grid grid-cols-3 w-full gap-x-2 gap-y-4 place-items-center p-4 mt-16"
+                className="p-4 mt-16 flex flex-wrap gap-1 w-full"
               >
                 {item.skills.map((skill, i) => (
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger>
-                        <div className="text-5xl" key={i}>
-                          {skill.icon}
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{skill.name}</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                  <div className="flex-col items-start" key={i}>
+                    <div className="flex items-center">
+                      <div className="text-[32px] border p-0.5 bg-pink-300 dark:bg-pink-800">
+                        {skill.icon}
+                      </div>
+                      <p className="px-2 border border-l-0 h-full py-1.5 bg-foreground/70 text-accent">
+                        {skill.name}
+                      </p>
+                    </div>
+                    {skill.subtitle && (
+                      <div className="text-[11px] bg-zinc-300 overflow-hidden border border-t-0">
+                        {skill.subtitle}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
+              {item.more && (
+                <div className="flex flex-wrap gap-2 w-full px-4 pb-4">
+                  {item.more.map((name) => (
+                    <span
+                      key={name}
+                      className="text-xs bg-black text-white dark:bg-white dark:text-black py-1 px-2 rounded-md tracking-tight font-semibold"
+                    >
+                      {name}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
